@@ -1,4 +1,4 @@
-let gulp, { src, dest, series, parallel } = require('gulp');
+let gulp, { src, dest, series, parallel, watch } = require('gulp');
 let cleanCSS = require('gulp-clean-css');
 let cleanJS = require('gulp-uglify');
 let sass = require('gulp-sass')(require('sass'));
@@ -77,11 +77,13 @@ function taskIMG() {
 //Задачи над шрифтами (преобразует)
 
 function taskFonts() {
-    return src('src/fonts/*.ttf')
+    return src('src/fonts/*.{ttf,eot,svg,woff,woff2}')
         .pipe(ttf2woff2())
         .pipe(dest('dist/fonts'));
 };
 
+function watchCss() {
+    watch('./src/scss/*.scss', taskCSS)
+}
 
-
-exports.default = series(taskDel, parallel(taskCSS, taskJS, taskIMG, taskFonts, taskHTML));
+exports.default = series(taskDel, parallel(taskCSS, taskJS, taskIMG, taskFonts, taskHTML), watchCss);

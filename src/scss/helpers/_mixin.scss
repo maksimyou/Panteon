@@ -1,1 +1,47 @@
 //Примеси
+
+@mixin center-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+
+
+// Точки останова максимально и минимальной ширины 
+
+@mixin for-phone-only {
+    @media (max-width: 599px) { @content; }
+  }
+  @mixin for-tablet-portrait-up {
+    @media (min-width: 600px) { @content; }
+  }
+  @mixin for-tablet-landscape-up {
+    @media (min-width: 900px) { @content; }
+  }
+  @mixin for-desktop-up {
+    @media (min-width: 1200px) { @content; }
+  }
+  @mixin for-big-desktop-up {
+    @media (min-width: 1800px) { @content; }
+  }
+  
+
+
+//Ширина контента
+
+@mixin width-content{
+    max-width: 1325px;
+    margin: 0 auto;
+  }
+
+//Цвет фона 
+@mixin color-background{
+   background-color: #0C1417;
+  }
+
+//Цвет шрифта и svg 
+@mixin color-fonts{
+   color: #F7931E;
+   }

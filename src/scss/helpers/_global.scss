@@ -1,1 +1,9 @@
 //Глобальные стили сайта 
+// USAGE миксины
+//.my-box {
+//    padding: 10px;
+    
+//    @include for-phone-only(max599) or for-tablet-portrait-up(min600) or for-tablet-landscape-up(min900) or for-desktop-up(max1200) or for-big-desktop-up(max1800){
+//      padding: 20px;
+//    }
+//  }
