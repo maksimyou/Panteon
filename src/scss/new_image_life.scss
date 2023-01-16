@@ -1,0 +1,88 @@
+.new_image_life_and_advantage_container {
+    background-color: #0C1417;
+}
+.new_image_life_and_advantage_contant {
+    padding-top: 100px;
+
+}
+.new_image_life_container{
+    max-width: 1172px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.new_image_life_photos {
+    display: flex;
+}
+.life_photo_1 {
+    margin-right: 30px;
+    margin-bottom: 40px;
+}
+.life_photo_2 {
+    margin-top: 40px;
+}
+.new_image_life_post {
+   max-width: 451px;
+   margin-top: 72px;
+
+}
+
+.life_post_title {
+    font-family: Montserrat;
+    font-weight: 700;
+    color: white;
+    font-size: calc(25px + 5 * ((100vw - 320px) / (1440 - 320)));
+    line-height: 34px;
+
+}
+
+.life_post_text {
+    font-family: Montserrat;
+    font-weight: 400;
+    color: white;
+    font-size:16px;
+    line-height: 26px;
+    margin: 50px 0 40px 0;
+}
+.life_post_button_wrapper{
+    position: relative;
+}
+.life_post_button_wrapper span{
+    position: absolute;
+    top: 20px;
+    left:10%;
+    font-family: Montserrat;
+    font-weight: 400;
+    color: white;
+    font-size:16px;
+    line-height: 20px;
+    text-align: center;
+}
+
+
+.life_post_button {
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+    display: inline-block;
+    height:60px;
+    width: 280px;
+    background: transparent;
+    border: 1px solid white;
+    transform: skew(-30deg, 0deg);
+}
+.life_post_button:hover {
+    border: 1px solid #F7931E;
+    transition: all .3s;
+
+}
+.advantage_container {
+}
+.advantage_item {
+}
+
+.advantage_img {
+}
+
+.advantage_disc {
+}

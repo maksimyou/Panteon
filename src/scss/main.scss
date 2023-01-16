@@ -5,4 +5,25 @@
 @import "./helpers/_mixin.scss";
 @import "./helpers/_normalize.scss";
 @import "./helpers/_variables.scss";
-@import "./style.scss";
+@import "./new_image_life.scss";
+@import "./header.scss";
+
+
+
+
+body{
+    background-color: rgb(116, 116, 116);
+}
+
+
+
+.wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+   
+}
+
+
+.main_container{
+
+}

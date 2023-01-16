@@ -82,8 +82,9 @@ function taskFonts() {
         .pipe(dest('dist/fonts'));
 };
 
-function watchCss() {
-    watch('./src/scss/*.scss', taskCSS)
+function watchCssHTML() {
+    watch('./src/scss/*.scss', taskCSS);
+    watch('./src/pages/**/*.html', taskHTML);
 }
 
-exports.default = series(taskDel, parallel(taskCSS, taskJS, taskIMG, taskFonts, taskHTML), watchCss);
+exports.default = series(taskDel, parallel(taskCSS, taskJS, taskIMG, taskFonts, taskHTML), watchCssHTML);
