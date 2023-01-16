@@ -20,7 +20,6 @@ burgerHeader.addEventListener('click', () => {
 
 
 
-
 //Переброс элемента по точке останова
 
 //let li = document.createElement('li');
