@@ -25,9 +25,20 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
   
-  .icon-Clock:before {
+
+  .icon-clock:before {
     content: "\e900";
+  }
+  .icon-Checkmark:before {
+    content: "\e906";
+  }
+  .icon-Krestiksvgpngru:before {
+    content: "\e907";
+  }
+  .icon-Arrow:before {
+    content: "\e905";
   }
   .icon-Instagram:before {
     content: "\e901";

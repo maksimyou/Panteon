@@ -85,6 +85,8 @@ function taskFonts() {
 function watchCssHTML() {
     watch('./src/scss/*.scss', taskCSS);
     watch('./src/pages/**/*.html', taskHTML);
+    watch('src/js/*.js', taskJS);
+
 }
 
 exports.default = series(taskDel, parallel(taskCSS, taskJS, taskIMG, taskFonts, taskHTML), watchCssHTML);

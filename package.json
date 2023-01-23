@@ -17,6 +17,7 @@
   "dependencies": {
     "gulp-autoprefixer": "^8.0.0",
     "jquery": "^3.6.3",
-    "slick-slider": "^1.8.2"
+    "slick-slider": "^1.8.2",
+    "swiper": "^8.4.6"
   }
 }

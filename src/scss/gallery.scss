@@ -1,0 +1,231 @@
+.gallery_container {
+    background-color: #0c1417;;
+}
+.gallery_contant {
+max-width: 1325px;
+margin: 0 auto;
+}
+.gallery_title {
+    font-family: Montserrat;
+    font-weight: 700;
+    color: white;
+    font-size:30px;
+    line-height: 34px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.gallery_contant_slaiders_screen {
+    //display: flex;
+    align-items: center;
+    //min-width: 0;
+    //justify-content: space-between;
+}
+
+
+
+
+
+//Слайдер---------------------------------------------------------------------------------------
+
+.strip-of-image{
+    display: flex;
+    text-align: center;
+    padding-bottom: 100px;
+    max-width: 1162px;
+    margin: 0 auto;
+}
+
+
+.gallery_slaid_strip {
+
+}
+
+.image-slider{
+    margin: 0 15px;
+}
+
+
+.prev{ 
+    top:35%;
+    //position: relative;
+    margin:0 10px;
+    //display: inline-block;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    left: 0px;
+
+}
+
+.prev::after{
+    content: '';
+}
+
+.next{
+    top: 35%;
+    margin:0 10px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    transform: rotate(0.5turn);
+    right: 0px;
+}
+
+.next::after{
+    content: '';
+}
+
+
+.prev:hover{
+    color: #f7931e;
+} 
+
+.next:hover{
+    color: #f7931e;
+}
+
+.wrapper-image img{
+    margin-left: 15px;
+    width: calc(200px + 66 * ((100vw - 320px) / (1440 - 320)));
+    height: calc(280px + 95 * ((100vw - 320px) / (1440 - 320)));
+}
+
+
+
+.swiper-horizontal> .gallery_contant_slaiders_scroll {
+    background: white;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 2px;
+    margin-top: 33px;
+    border: 1px solid white;
+    border-radius: 0;
+    margin-bottom: 63px;
+    bottom: 0px;
+    left: calc(0px + 80 * ((100vw - 320px) / (1440 - 320)));
+    right: calc(0px + 80 * ((100vw - 320px) / (1440 - 320)));
+    cursor: pointer;
+    //left:12.19%;
+}
+@media (max-width:1030px){
+    .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal, .gallery_contant_slaiders_scroll {    
+        max-width: 768px;
+    }
+}
+
+@media (max-width:768px){
+    .prev, .next{
+        display: none;
+    }
+}
+
+@media (max-width:855px){
+    .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal, .gallery_contant_slaiders_scroll {    
+        max-width: 568px;
+    }
+}
+
+@media (max-width:655px){
+    .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal, .gallery_contant_slaiders_scroll {    
+        max-width: 482px;
+    }
+}
+@media (max-width:530px){
+    .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal, .gallery_contant_slaiders_scroll {    
+        max-width: 290px;
+    }
+}
+.swiper-scrollbar > .swiper-scrollbar-drag{
+    background: #f7931e;
+    z-index: 5;
+    border-radius: 0;
+    top: -4px;
+    height: 10px;
+}
+
+
+
+
+
+//Слайдер-2-------------------------------------------------------------------------------------------
+
+.strip-of-image-2{
+    display: flex;
+    text-align: center;
+    padding-bottom: 100px;
+    max-width: 1162px;
+    margin: 0 auto;
+}
+
+
+.gallery_slaid_strip-2 {
+
+}
+.wrapper-image-2{
+    margin-left: 15px;
+    width: calc(225px + 136 * ((100vw - 320px) / (1440 - 320))); 
+    height: calc(186px + 114 * ((100vw - 320px) / (1440 - 320)));
+}
+
+
+.prev-2{ 
+    top: 35%;
+    //position: relative;
+    margin:0 10px;
+    //display: inline-block;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    left: 0px;
+
+}
+
+.prev-2::after{
+    content: '';
+}
+
+.next-2{
+    top: 35%;
+    margin:0 10px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    transform: rotate(0.5turn);
+    right: 0px;
+}
+
+.next-2::after{
+    content: '';
+}
+
+
+.prev-2:hover{
+    color: #f7931e;
+} 
+
+.next-2:hover{
+    color: #f7931e;
+}
+
+
+@media (max-width:768px){
+    .prev-2, .next-2{
+        display: none;
+    }
+}
+.swiper-horizontal> .gallery_contant_slaiders_scroll-2 {
+    background: white;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 2px;
+    margin-top: 33px;
+    border: 1px solid white;
+    border-radius: 0;
+    margin-bottom: 100px;
+    bottom: 0px;
+    left: calc(0px + 80 * ((100vw - 320px) / (1440 - 320)));
+    right: calc(0px + 80 * ((100vw - 320px) / (1440 - 320)));
+    cursor: pointer;
+    //left:12.19%;
+}

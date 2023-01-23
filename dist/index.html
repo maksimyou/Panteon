@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/bundle.min.css">
-    <link rel="stylesheet" href="/node_modules/slick-slider/slick/slick.css">
-    <link rel="stylesheet" href="/node_modules/slick-slider/slick/slick-theme.css">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
@@ -43,8 +43,8 @@
         <div class="header_title_content-1">
             <h1 class="title_header_one_screen">Фитнес клуб Пантеон</h1>
             <div class="text_header_one_screen">Лучше нас только боги</div>
-            <div class="button_header_one_screen"><span class="header_button_figure-1"></span><a href="#"
-                    class="header_button_figure-2"></a><span class="get_consult">Получить консультацию</span>
+            <div class="button_header_one_screen"><span class="header_button_figure-1"></span>
+                <div class="header_button_figure-2"></div><span class="get_consult">Получить консультацию</span>
             </div>
         </div>
         <div class="header_title_content-2">
@@ -61,10 +61,42 @@
 
 </header>
         <!--Основа страницы-->
-        <main class="main_container">
+        <main id="mainn" class="main_container">
+    <div class="modal_container">
+    <div class="modal_content_data_call">
+        <div class="data_call_logo_close">
+            <img class="logo_modal" src="/dist/img/logo.png" alt="">
+            <div class="data_call_close_icon icon-Krestiksvgpngru"></div>
+        </div>
+        <div class="data_call_list">
+            <div class="data_call_list_data"><span class="icon-Checkmark checkmark "></span><span
+                    class="data_sented">Данные успешно
+                    отправлены</span>
+            </div>
+            <div class="data_call_list_we_contact">Мы свяжемся с вами вближайшее время</div>
+            <div class="data_call_list_geo">
+                <div class="icon_style_modal">
+                    <span class="icon-Vector style_geo"></span>
+                    <div class="">г. Орехово-Зуево, ул. Ленина 84</div>
+                </div>
+                <div class="icon_style_modal ">
+                    <span class="icon-clock style_geo"></span>
+                    <div class="">Ежедневно с 8:00 до 23:00
+                    </div>
+                </div>
+            </div>
+            <div class="data_call_list_subscribe">
+                <div class="subscribe_social_network">Подписывайтесь на наши соц.сети
+                </div>
+                <div class="icon_social_network"><span class="icon-Instagram modal_icons-1"></span><span
+                        class="icon-Vkontakte modal_icons-2"></span></div>
+            </div>
+        </div>
+    </div>
+</div>
     <div class="new_image_life_and_advantage_container">
     <div class="new_image_life_and_advantage_contant">
-        <div class="new_image_life_container">
+        <div class="new_image_life_container active_life-1 active_life-2 " data-life="1">
             <div class="new_image_life_photos">
                 <img class="life_photo_1" src="/dist/img/new-life-plan-1.png" alt="">
                 <img class="life_photo_2" src="/dist/img/new-life-plan-2.png" alt="">
@@ -79,37 +111,648 @@
 
             </div>
         </div>
+
+        <div class="new_image_life_container" data-life="2">
+            <div class="new_image_life_photos">
+                <img class="life_photo_1" src="/dist/img/new-life-plan-1.png" alt="">
+                <img class="life_photo_2" src="/dist/img/new-life-plan-2.png" alt="">
+            </div>
+            <div class="new_image_life_post">
+                <div class="life_post_title">Новый образ жизни-2</div>
+                <div class="life_post_text">Став частью нашей команды, вы сможете изменить привычный ритм жизни и
+                    сделать каждый свой день особенным, а формат наших тренировок позволит вам раскрыть потенциал вашего
+                    тела на 100%.</div>
+                <div class="life_post_button_wrapper"><a class="life_post_button"></a><span>Получить консультацию</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="new_image_life_container" data-life="3">
+            <div class="new_image_life_photos">
+                <img class="life_photo_1" src="/dist/img/new-life-plan-1.png" alt="">
+                <img class="life_photo_2" src="/dist/img/new-life-plan-2.png" alt="">
+            </div>
+            <div class="new_image_life_post">
+                <div class="life_post_title">Новый образ жизни-3</div>
+                <div class="life_post_text">Став частью нашей команды, вы сможете изменить привычный ритм жизни и
+                    сделать каждый свой день особенным, а формат наших тренировок позволит вам раскрыть потенциал вашего
+                    тела на 100%.</div>
+                <div class="life_post_button_wrapper"><a class="life_post_button"></a><span>Получить консультацию</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="new_image_life_container" data-life="4">
+            <div class="new_image_life_photos">
+                <img class="life_photo_1" src="/dist/img/new-life-plan-1.png" alt="">
+                <img class="life_photo_2" src="/dist/img/new-life-plan-2.png" alt="">
+            </div>
+            <div class="new_image_life_post">
+                <div class="life_post_title">Новый образ жизни-4</div>
+                <div class="life_post_text">Став частью нашей команды, вы сможете изменить привычный ритм жизни и
+                    сделать каждый свой день особенным, а формат наших тренировок позволит вам раскрыть потенциал вашего
+                    тела на 100%.</div>
+                <div class="life_post_button_wrapper"><a class="life_post_button"></a><span>Получить консультацию</span>
+                </div>
+
+            </div>
+        </div>
+
+
+
         <div class="advantage_container">
-            <div class="advantage_item">
-                <img class="advantage_img" src="/dist/img/stationary-bike.svg" alt="">
-                <div class="advantage_disc">Полностью<br> укомплектованный зал</div>
+            <div class="half_advantage_item auxiliary">
+                <div class="advantage_item" data-life="1">
+                    <img class="advantage_img" src="/dist/img/stationary-bike.svg" alt="">
+                    <div class="advantage_disc">Полностью<br> укомплектованный зал</div>
+                </div>
+                <div class="advantage_item" data-life="2">
+                    <img class="advantage_img" src="/dist/img/dumbbell.svg" alt="">
+                    <div class="advantage_disc">Профессиональное <br> оборудование</div>
+                </div>
             </div>
-            <div class="advantage_item">
-                <img class="advantage_img" src="/dist/img/dumbbell.svg" alt="">
-                <div class="advantage_disc">Профессиональное <br> оборудование</div>
-            </div>
-            <div class="advantage_item">
-                <img class="advantage_img" src="/dist/img/location.svg" alt="">
-                <div class="advantage_disc">Удобное расположение <br> в центре города</div>
-            </div>
-            <div class="advantage_item">
-                <img class="advantage_img" src="/dist/img/wallet.svg" alt="">
-                <div class="advantage_disc">Доступная <br> стоимость занятий</div>
+
+            <div class="half_advantage_item">
+                <div class="advantage_item" data-life="3">
+                    <img class="advantage_img" src="/dist/img/location.svg" alt="">
+                    <div class="advantage_disc">Удобное расположение <br> в центре города</div>
+                </div>
+                <div class="advantage_item" data-life="4">
+                    <img class="advantage_img" src="/dist/img/wallet.svg" alt="">
+                    <div class="advantage_disc">Доступная <br> стоимость занятий</div>
+                </div>
             </div>
         </div>
 
     </div>
 
 </div>
-    <p class="wrapperr">ЭТО ОСНОВА САЙТА</p>
+    <div class="gallery_container">
+    <div class="gallery_contant">
+        <div class="gallery_title">Галерея</div>
+        <div class="gallery_contant_slaiders_screen">
+
+
+            <!--Слайдер №1-->
+            <!-- Slider main container -->
+            <div class="swiper strip-of-image">
+                <!--Additional required wrapper-->
+                <div class="swiper-wrapper gallery_slaid_strip">
+                    <!--Slides-->
+                    <div class="swiper-slide slide_flex">
+                        <div class="wrapper-image"><img src="/dist/img/galereia/5382ф.png" alt=""></div>
+                    </div>
+                    <div class="swiper-slide slide_flex">
+                        <div class="wrapper-image"><img src="/dist/img/galereia/STK_7899.png" alt=""></div>
+                    </div>
+                    <div class="swiper-slide slide_flex">
+                        <div class="wrapper-image"><img src="/dist/img/galereia/STK_7858.png" alt=""></div>
+                    </div>
+                    <div class="swiper-slide slide_flex">
+                        <div class="wrapper-image"><img src="/dist/img/galereia/STK_6966ф.png" alt=""></div>
+                    </div>
+                    <div class="swiper-slide slide_flex">
+                        <div class="wrapper-image"><img src="/dist/img/galereia/5382ф.png" alt=""></div>
+                    </div>
+                    <div class="swiper-slide slide_flex">
+                        <div class="wrapper-image"><img src="/dist/img/galereia/STK_7899.png" alt=""></div>
+                    </div>
+                    <div class="swiper-slide slide_flex">
+                        <div class="wrapper-image"><img src="/dist/img/galereia/STK_7858.png" alt=""></div>
+                    </div>
+                    <div class="swiper-slide slide_flex">
+                        <div class="wrapper-image"><img src="/dist/img/galereia/STK_6966ф.png" alt=""></div>
+                    </div>
+
+                </div>
+                <!--If we need navigation buttons-->
+                <div class="swiper-button-prev prev icon-Arrow"></div>
+                <div class="swiper-button-next next icon-Arrow"></div>
+
+                <!--If we need pagination-->
+                <!--<div class="swiper-pagination"></div>-->
+
+                <!--If we need scrollbar-->
+                <div class="gallery_contant_slaiders_scroll swiper-scrollbar"></div>
+            </div>
+
+            <!--Слайдер №2-->
+
+            <!-- Slider main container -->
+            <div class="swiper-gallery swiper strip-of-image-2">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper gallery_slaid_strip-2">
+                    <!-- Slides -->
+                    <div class="swiper-slide slide_flex-2"><img class="wrapper-image-2"
+                            src="/dist/img/galereia/interier/vladimirbelov.png" alt=""></div>
+                    <div class="swiper-slide slide_flex-2"><img class="wrapper-image-2"
+                            src="/dist/img/galereia/interier/vladimirbelov-2.png" alt=""></div>
+                    <div class="swiper-slide slide_flex-2"><img class="wrapper-image-2"
+                            src="/dist/img/galereia/interier/vladimirbelov-3.png" alt=""></div>
+                    <div class="swiper-slide slide_flex-2"><img class="wrapper-image-2"
+                            src="/dist/img/galereia/interier/vladimirbelov.png" alt=""></div>
+                    <div class="swiper-slide slide_flex-2"><img class="wrapper-image-2"
+                            src="/dist/img/galereia/interier/vladimirbelov-2.png" alt=""></div>
+                    <div class="swiper-slide slide_flex-2"><img class="wrapper-image-2"
+                            src="/dist/img/galereia/interier/vladimirbelov-3.png" alt=""></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev  prev-2 icon-Arrow"></div>
+                <div class="swiper-button-next next-2 icon-Arrow "></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar gallery_contant_slaiders_scroll-2"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    <div class="abonement_container">
+
+    <div class="abonement_content">
+        <div class="abonement_title">Абонементы</div>
+
+
+        <div class="abonement_count_lessons_price_container">
+            <div class="colum_1">
+                <div class="type_row_1">Кол-во занятий</div>
+                <div class="type_row_2">Персональный тренинг с инструктором</div>
+                <div class="type_row_3">Самостоятельные тренировки в тренажерном зале</div>
+                <div class="type_row_4">Зал групповых программ</div>
+            </div>
+
+
+            <div class="colum_2">
+                <div class="row_1"> 1 тренировка</div>
+                <div class="row_2">700 руб.</div>
+                <div class="row_3">250 руб.</div>
+                <div class="row_4">250 руб.</div>
+            </div>
+
+
+            <div class="colum_3">
+                <div class="row_1"> 4 тренировки</div>
+                <div class="row_2">2600 руб. (действителен в течении 3 недель)</div>
+                <div class="row_3">-__-</div>
+                <div class="row_4">-__-</div>
+            </div>
+
+
+            <div class="colum_4">
+                <div class="row_1"> 8 тренировок</div>
+                <div class="row_2">5200 руб. (действителен в течении 6 недель)</div>
+                <div class="row_3">1500 руб. (действителен в течении 30 дней)</div>
+                <div class="row_4">2000 руб. (действителен в течении 30 дней</div>
+            </div>
+
+
+            <div class="colum_5">
+                <div class="row_1"> 12 тренировок</div>
+                <div class="row_2">7200 руб. (действителен в течении 10 недель)</div>
+                <div class="row_3">2000 руб. (действителен в течении 30 дней)</div>
+                <div class="row_4">2750 руб. (действителен в течении 45 дней)</div>
+            </div>
+        </div>
+
+        <div class="abonement_count_lessons_price_slider_container">
+
+            <div class="count_lessons_price_slider_wrap swiper-wrapper">
+
+                <div class="abonement_count_lessons_price_container_slider swiper-slide">
+                    <div class="colum_1">
+                        <div class="type_slider_row_1">Кол-во занятий</div>
+                        <div class="type_slider_row_2">Персональный тренинг с инструктором</div>
+                        <div class="type_slider_row_3">Самостоятельные тренировки в тренажерном зале</div>
+                        <div class="type_slider_row_4">Зал групповых программ</div>
+                    </div>
+                    <div class="colum_2">
+                        <div class="row_slidre_1"> 1 тренировка</div>
+                        <div class="row_2">700 руб.</div>
+                        <div class="row_3">250 руб.</div>
+                        <div class="row_4">250 руб.</div>
+                    </div>
+                </div>
+                <div class="abonement_count_lessons_price_container_slider swiper-slide">
+                    <div class="colum_1">
+                        <div class="type_slider_row_1">Кол-во занятий</div>
+                        <div class="type_slider_row_2">Персональный тренинг с инструктором</div>
+                        <div class="type_slider_row_3">Самостоятельные тренировки в тренажерном зале</div>
+                        <div class="type_slider_row_4">Зал групповых программ</div>
+                    </div>
+                    <div class="colum_3">
+                        <div class="row_slidre_1"> 4 тренировки</div>
+                        <div class="row_2">2600 руб. (действителен в течении 3 недель)</div>
+                        <div class="row_3">-__-</div>
+                        <div class="row_4">-__-</div>
+                    </div>
+                </div>
+                <div class="abonement_count_lessons_price_container_slider swiper-slide">
+                    <div class="colum_1">
+                        <div class="type_slider_row_1">Кол-во занятий</div>
+                        <div class="type_slider_row_2">Персональный тренинг с инструктором</div>
+                        <div class="type_slider_row_3">Самостоятельные тренировки в тренажерном зале</div>
+                        <div class="type_slider_row_4">Зал групповых программ</div>
+                    </div>
+                    <div class="colum_4">
+                        <div class="row_slidre_1"> 8 тренировок</div>
+                        <div class="row_2">5200 руб. (действителен в течении 6 недель)</div>
+                        <div class="row_3">1500 руб. (действителен в течении 30 дней)</div>
+                        <div class="row_4">2000 руб. (действителен в течении 30 дней</div>
+                    </div>
+                </div>
+                <div class="abonement_count_lessons_price_container_slider swiper-slide">
+                    <div class="colum_1">
+                        <div class="type_slider_row_1">Кол-во занятий</div>
+                        <div class="type_slider_row_2">Персональный тренинг с инструктором</div>
+                        <div class="type_slider_row_3">Самостоятельные тренировки в тренажерном зале</div>
+                        <div class="type_slider_row_4">Зал групповых программ</div>
+                    </div>
+                    <div class="colum_5">
+                        <div class="row_slidre_1"> 12 тренировок</div>
+                        <div class="row_2">7200 руб. (действителен в течении 10 недель)</div>
+                        <div class="row_3">2000 руб. (действителен в течении 30 дней)</div>
+                        <div class="row_4">2750 руб. (действителен в течении 45 дней)</div>
+                    </div>
+                </div>
+            </div>
+
+            <!--If we need scrollbar-->
+            <div class="gallery_contant_slaiders_scroll-3"></div>
+        </div>
+        <!---------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="abonement_title">Абонемент по времени</div>
+
+
+        <div class="abonement_count_lessons_price_container">
+            <div class="colum_1">
+                <div class="type_row_1">Тип карты</div>
+                <div class="type_row_2">Индивидуальная,
+                    полная без ограничения
+                    в посещении /<span> 8:00 – 23:00</span></div>
+                <div class="type_row_3">Индивидуальная,
+                    дневная /<span> 8:00 – 17:00</span></div>
+            </div>
+
+
+            <div class="colum_2">
+                <div class="row_1"> 12 месяцев</div>
+                <div class="row_2">18000
+                    (+200 мин. солярия)</div>
+                <div class="row_3">—</div>
+            </div>
+
+
+            <div class="colum_3">
+                <div class="row_1"> 6 месяцев</div>
+                <div class="row_2">12000</div>
+                <div class="row_3">9500</div>
+            </div>
+
+
+            <div class="colum_4">
+                <div class="row_1"> 3 месяцев</div>
+                <div class="row_2">7000</div>
+                <div class="row_3">5500</div>
+            </div>
+
+
+            <div class="colum_5">
+                <div class="row_1"> 1 месяцев</div>
+                <div class="row_2">2500</div>
+                <div class="row_3">2000</div>
+            </div>
+        </div>
+
+        <div class="abonement_count_lessons_price_slider_container">
+
+            <div class="count_lessons_price_slider_wrap swiper-wrapper">
+
+                <div class="abonement_count_lessons_price_container_slider swiper-slide">
+                    <div class="colum_1">
+                        <div class="type_slider_row_1">Кол-во занятий</div>
+                        <div class="type_slider_row_2">Персональный тренинг с инструктором</div>
+                        <div class="type_slider_row_3">Самостоятельные тренировки в тренажерном зале</div>
+                        <div class="type_slider_row_4">Зал групповых программ</div>
+                    </div>
+                    <div class="colum_2">
+                        <div class="row_slidre_1"> 1 тренировка</div>
+                        <div class="row_2">700 руб.</div>
+                        <div class="row_3">250 руб.</div>
+                        <div class="row_4">250 руб.</div>
+                    </div>
+                </div>
+                <div class="abonement_count_lessons_price_container_slider swiper-slide">
+                    <div class="colum_1">
+                        <div class="type_slider_row_1">Кол-во занятий</div>
+                        <div class="type_slider_row_2">Персональный тренинг с инструктором</div>
+                        <div class="type_slider_row_3">Самостоятельные тренировки в тренажерном зале</div>
+                        <div class="type_slider_row_4">Зал групповых программ</div>
+                    </div>
+                    <div class="colum_3">
+                        <div class="row_slidre_1"> 4 тренировки</div>
+                        <div class="row_2">2600 руб. (действителен в течении 3 недель)</div>
+                        <div class="row_3">-__-</div>
+                        <div class="row_4">-__-</div>
+                    </div>
+                </div>
+                <div class="abonement_count_lessons_price_container_slider swiper-slide">
+                    <div class="colum_1">
+                        <div class="type_slider_row_1">Кол-во занятий</div>
+                        <div class="type_slider_row_2">Персональный тренинг с инструктором</div>
+                        <div class="type_slider_row_3">Самостоятельные тренировки в тренажерном зале</div>
+                        <div class="type_slider_row_4">Зал групповых программ</div>
+                    </div>
+                    <div class="colum_4">
+                        <div class="row_slidre_1"> 8 тренировок</div>
+                        <div class="row_2">5200 руб. (действителен в течении 6 недель)</div>
+                        <div class="row_3">1500 руб. (действителен в течении 30 дней)</div>
+                        <div class="row_4">2000 руб. (действителен в течении 30 дней</div>
+                    </div>
+                </div>
+                <div class="abonement_count_lessons_price_container_slider swiper-slide">
+                    <div class="colum_1">
+                        <div class="type_slider_row_1">Кол-во занятий</div>
+                        <div class="type_slider_row_2">Персональный тренинг с инструктором</div>
+                        <div class="type_slider_row_3">Самостоятельные тренировки в тренажерном зале</div>
+                        <div class="type_slider_row_4">Зал групповых программ</div>
+                    </div>
+                    <div class="colum_5">
+                        <div class="row_slidre_1"> 12 тренировок</div>
+                        <div class="row_2">7200 руб. (действителен в течении 10 недель)</div>
+                        <div class="row_3">2000 руб. (действителен в течении 30 дней)</div>
+                        <div class="row_4">2750 руб. (действителен в течении 45 дней)</div>
+                    </div>
+                </div>
+            </div>
+
+            <!--If we need scrollbar-->
+            <div class="gallery_contant_slaiders_scroll-3"></div>
+        </div>
+    </div>
+    <div class="abonement_title">Разовые тренировки</div>
+    <div class="container_training">
+        <div class="content_training">
+            <div class="training_item">
+                <div class="training_item_title">Самостоятельные тренировки в тренажерном зале</div>
+                <div class="training_item_time_image">
+                    <span class="item_train_times"> 8:00 – 23:00</span>
+                    <img class="item_train_img" src="/dist/img/gym-time.svg" alt="">
+                </div>
+                <div class="training_item_price">250₽</div>
+                <div class="training_item_count">1 тренировка</div>
+                <div class="training_item_button_wrapper"><a class="training_item_button"></a><span>Узнать</span>
+                </div>
+            </div>
+            <div class="training_item">
+                <div class="training_item_title">Персональный тренинг
+                    с инструктором</div>
+                <div class="training_item_time_image">
+                    <span class="item_train_times"> 8:00 – 23:00</span>
+                    <img class="item_train_img" src="/dist/img/gym-time.svg" alt="">
+                </div>
+                <div class="training_item_price">700₽</div>
+                <div class="training_item_count">1 тренировка</div>
+                <div class="training_item_button_wrapper"><a class="training_item_button"></a><span>Узнать</span>
+                </div>
+            </div>
+            <div class="training_item">
+                <div class="training_item_title">Зал групповых<br> программ</div>
+                <div class="training_item_time_image">
+                    <span class="item_train_times">график занятий уточняйте у администратора</span>
+                    <img class="item_train_img" src="/dist/img/gym-time.svg" alt="">
+                </div>
+                <div class="training_item_price">300₽</div>
+                <div class="training_item_count">1 тренировка</div>
+                <div class="training_item_button_wrapper"><a class="training_item_button"></a><span>Узнать</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="abonement_count_time_container"></div>
+</div>
+    <div class="treners_container">
+    <div class="treners_contant">
+        <div class="treners_contant_title">Тренеры </div>
+        <div class="treners_contant_slider_wrapper swiper">
+            <div class="treners_contant_sliders_list swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="treners_sliders_list_slide">
+                        <img class="trainer_img" src="/dist/img/teacher/5407ф.png" alt="">
+                        <div class="initials_trainer">Илья Панченко</div>
+                        <div class="container_text_trainer ">
+                            <div class="personal_trainer">Персональный тренер</div>
+                            <div class="qualificatio_trainer">Инструктор тренажерного зала</div>
+                            <div class="work_experience">Опыт работы — 4 года</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="treners_sliders_list_slide">
+                        <img class="trainer_img" src="/dist/img/teacher/5371ф.png" alt="">
+                        <div class="initials_trainer">Екатерина Сосина-Нуньес</div>
+                        <div class="container_text_trainer ">
+                            <div class="personal_trainer">Персональный тренер</div>
+                            <div class="qualificatio_trainer">Инструктор тренажерного зала</div>
+                            <div class="work_experience">Опыт работы — 4 года</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="treners_sliders_list_slide swiper-slide">
+                        <img class="trainer_img" src="/dist/img/teacher/5405ф.png" alt="">
+                        <div class="initials_trainer">Юлия Белова</div>
+                        <div class="container_text_trainer ">
+                            <div class="personal_trainer">Персональный тренер</div>
+                            <div class="qualificatio_trainer">Инструктор тренажерного зала</div>
+                            <div class="work_experience">Опыт работы — 4 года</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="treners_sliders_list_slide swiper-slide">
+                        <img class="trainer_img" src="/dist/img/teacher/5407ф.png" alt="">
+                        <div class="initials_trainer">Михаил Алексеев</div>
+                        <div class="container_text_trainer ">
+                            <div class="personal_trainer">Персональный тренер</div>
+                            <div class="qualificatio_trainer">Инструктор тренажерного зала</div>
+                            <div class="work_experience">Опыт работы — 4 года</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="treners_sliders_list_slide">
+                        <img class="trainer_img" src="/dist/img/teacher/5407ф.png" alt="">
+                        <div class="initials_trainer">Илья Панченко</div>
+                        <div class="container_text_trainer ">
+                            <div class="personal_trainer">Персональный тренер</div>
+                            <div class="qualificatio_trainer">Инструктор тренажерного зала</div>
+                            <div class="work_experience">Опыт работы — 4 года</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="treners_sliders_list_slide">
+                        <img class="trainer_img" src="/dist/img/teacher/5371ф.png" alt="">
+                        <div class="initials_trainer">Екатерина Сосина-Нуньес</div>
+                        <div class="container_text_trainer ">
+                            <div class="personal_trainer">Персональный тренер</div>
+                            <div class="qualificatio_trainer">Инструктор тренажерного зала</div>
+                            <div class="work_experience">Опыт работы — 4 года</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="treners_sliders_list_slide swiper-slide">
+                        <img class="trainer_img" src="/dist/img/teacher/5405ф.png" alt="">
+                        <div class="initials_trainer">Юлия Белова</div>
+                        <div class="container_text_trainer ">
+                            <div class="personal_trainer">Персональный тренер</div>
+                            <div class="qualificatio_trainer">Инструктор тренажерного зала</div>
+                            <div class="work_experience">Опыт работы — 4 года</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="treners_sliders_list_slide swiper-slide">
+                        <img class="trainer_img" src="/dist/img/teacher/5407ф.png" alt="">
+                        <div class="initials_trainer">Михаил Алексеев</div>
+                        <div class="container_text_trainer ">
+                            <div class="personal_trainer">Персональный тренер</div>
+                            <div class="qualificatio_trainer">Инструктор тренажерного зала</div>
+                            <div class="work_experience">Опыт работы — 4 года</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="treners_contant_prev prev-4 icon-Arrow"></div>
+            <div class="treners_contant_next next-4 icon-Arrow"></div>
+            <div class="treners_contant_scrollbar"></div>
+        </div>
+    </div>
+
+</div>
+    <div class="forms_container" id="form">
+
+    <div class="forms_content">
+        <div class="plug"></div>
+        <div class="forms_form_field">
+            <div class="field_row">
+                <div class="form_field_title">Остались вопросы?</div>
+                <div class="form_field_telephon">Оставьте Ваш номер телефона
+                    и мы <span>обязательно с Вами свяжемся</span></div>
+                <form class="forms_field" action="">
+                    <input class="form_input" type="text" placeholder="Введите имя" name="" id="">
+                    <input class="form_input" type="tel" placeholder="Введите телефон" name="" id="">
+                    <div class="form_button_wrapper">
+                        <input type="" class="form_post_button"></input>
+                        <span>Получить консультацию</span>
+                    </div>
+                </form>
+                <a href="#" class="political_agreement">Нажимая на кнопку вы соглашаетесь с политикой
+                    конфиденциальности</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+    <div class="contacts_maps_container">
+
+    <div style="position:relative;overflow:hidden;"><a
+            href="https://yandex.ru/maps/10745/orehovo-zuevo/?utm_medium=mapframe&utm_source=maps"
+            style="color:#eee;font-size:12px;position:absolute;top:0px;">Орехово‑Зуево</a><a
+            href="https://yandex.ru/maps/10745/orehovo-zuevo/?indoorLevel=1&ll=38.990450%2C55.809722&utm_medium=mapframe&utm_source=maps&z=17.06"
+            style="color:#eee;font-size:12px;position:absolute;top:14px;">Орехово‑Зуево — Яндекс Карты</a><iframe
+            class="maps_size" src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=38.990450%2C55.809722&z=17.06"
+            frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+    </div>
+
+    <div class="contacts_container">
+        <div class="contacts_content">
+            <div class="contacts_title">Контакты</div>
+            <div class="contacts_city-street_time_tel">
+                <span class="icon-Vector icon_cont"></span>
+                <span class="text_cont">г. Орехово-Зуево, ул. Ленина 84</span>
+            </div>
+            <div class="contacts_city-street_time_tel">
+                <span class="icon-clock icon_cont"></span>
+                <span class="text_cont">Ежедневно с 8:00 до 23:00
+                </span>
+            </div>
+            <div class="contacts_city-street_time_tel">
+                <span class="icon-Phone icon_cont"></span>
+                <span class="text_cont">+7 (496) 416-19-16,<br>
+                    +7 (925) 881-21-70
+                </span>
+            </div>
+            <div class="contacts_social">
+                <div class="contacts_social_text">Подписывайтесь на наши соц.сети
+                </div>
+                <div class="contacts_social_icons"><span class="icon-Instagram"></span> <span
+                        class="icon-Vkontakte"></span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!--width="1443" height="567" -->
+
+
+
 </main>
         <!--Низ сайта-->
-        <footer>
-    <div class="div">ЭТО НИЗ САЙТА</div>
+        <footer class="footer_container">
+    <div class="footer_content">
+        <div class="footer_logo_rights_ages">
+            <div class="footer_logo"> <img src="/dist/img/logo.png" alt=""></div>
+            <div class="footer_rights">© Все права защищены</div>
+            <div class="footer_ages">Орехово-Зуево, 2013-2022
+            </div>
+        </div>
+        <div class="footer_our_social">
+            <div class="footer_our_social_text">Наши соц.сети</div>
+            <div class="footer_our_social_icons">
+                <div class="footer_insta icon-Instagram"></div>
+                <div class="footer_vk icon-Vkontakte"></div>
+            </div>
+        </div>
+        <div class="footer_address_privacy-policy">
+            <div class="footer_address_text">г. Орехово-Зуево, ул. Ленина 84</div>
+            <div class="footer_address_text">Ежедневно с 8:00 до 23:00</div>
+            <div class="footer_address_text">+7 (496) 416-19-16, +7 (925) 881-21-70 </div>
+            <a class="footer_address_text" href="#">Политика конфиденциальности </a>
+        </div>
+    </div>
 </footer>
     </div>
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../node_modules/slick-slider/slick/slick.min.js"></script>
+    <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
     <script src="./js/bundle.min.js"></script>
 
 </body>

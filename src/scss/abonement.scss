@@ -1,0 +1,428 @@
+.abonement_container {
+   background-color: white;
+   padding: 100px 0;
+}
+.abonement_content {
+    max-width: 1096px;
+    margin:0 auto;
+}
+.abonement_title {
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 700;
+    color: #0C1417;
+    font-size: 30px;
+    line-height: 34px;
+    margin-bottom: calc(60px + 20 * ((100vw - 320px) / (1440 - 320)));
+}
+.abonement_count_lessons_price_container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 370px;
+    margin: 0 10px;
+    margin-bottom: 80px;
+}
+
+.abonement_count_lessons_price_container::before{
+
+    content: '';
+    position: absolute;
+    top: 39px;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(12, 20, 23, 0.5);
+}
+.abonement_count_lessons_price_slider_container{
+
+display: none;
+
+}
+.abonement_count_lessons_price_container_slider {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 370px;
+    //margin: 0 10px 0 10px;
+}
+
+.abonement_count_lessons_price_container_slider::before{
+
+    content: '';
+    position: absolute;
+    top: 39px;
+    width: 75%;
+    height: 2px;
+    background-color: rgba(12, 20, 23, 0.5);
+}
+.colum_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:  calc(130px + 91 * ((100vw - 320px) / (1440 - 320)));
+}
+.colum_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width:  150px;
+}
+.colum_3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width:  calc(150px + 7 * ((100vw - 320px) / (1440 - 320)));
+
+}
+.colum_4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width:  calc(150px + 45 * ((100vw - 320px) / (1440 - 320)));
+
+}
+.colum_5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width:  calc(150px + 42 * ((100vw - 320px) / (1440 - 320)));
+}
+
+
+.type_row_1, .type_slider_row_1 {
+    white-space: nowrap;
+    height: 39px;
+    font-family: Montserrat;
+    font-weight: 500;
+    color: #0C1417;
+    font-size: calc(16px + 2 * ((100vw - 320px) / (1440 - 320)));
+    line-height: 24px;
+    margin-bottom: 35px;
+}
+.type_row_2, .type_slider_row_2 {
+    height: 100.3px;
+    font-family: Montserrat;
+    font-weight: 700;
+    color: #0C1417;
+    font-size: calc(14px + 2 * ((100vw - 320px) / (1440 - 320)));
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.type_row_2 span{
+    font-weight: 400;
+
+}
+.type_row_3, .type_slider_row_3 {
+    height: 100.3px;
+    font-family: Montserrat;
+    font-weight: 700;
+    color: #0C1417;
+    font-size: calc(14px + 2 * ((100vw - 320px) / (1440 - 320)));
+    line-height: 24px;
+    margin-bottom: 10px;
+
+}
+.type_row_3 span{
+    font-weight: 400;
+
+}
+.type_row_4, .type_slider_row_4 {
+    height: 100.3px;
+    font-family: Montserrat;
+    font-weight: 700;
+    color: #0C1417;
+    font-size: calc(14px + 2 * ((100vw - 320px) / (1440 - 320)));
+    line-height: 24px;
+    margin-bottom: 10px;
+
+}
+
+.row_1,.row_slidre_1 {
+    height: 39px;
+    white-space: nowrap;
+    font-family: Montserrat;
+    font-weight: 700;
+    color: #0C1417;
+    font-size: calc(16px + 2 * ((100vw - 320px) / (1440 - 320)));
+    line-height: 24px;
+    margin-bottom: 35px;
+}
+
+
+.row_2 {
+    cursor: pointer;
+    height: 100.3px;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 400;
+    color: #0C1417;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+
+}
+
+.row_3 {
+    cursor: pointer;
+    height: 100.3px;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 400;
+    color: #0C1417;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+
+}
+
+.row_4 {
+    cursor: pointer;
+    height: 100.3px;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 400;
+    color: #0C1417;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+
+}
+
+.row_2:hover {
+    font-weight: 600;
+
+}
+.row_3:hover {
+    font-weight: 600;
+
+}
+.row_4:hover {
+    font-weight: 600;
+
+}
+
+.active-count{
+
+    color: #F7931E;
+}
+
+@media (max-width:768px){
+    .abonement_count_lessons_price_container{
+        display: none;
+    }
+    .abonement_count_lessons_price_slider_container{
+        display: block;
+    }
+}
+
+
+.prev-3{ 
+    top:35%;
+    //position: relative;
+    margin:0 10px;
+    //display: inline-block;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    left: 0px;
+
+}
+
+.prev-3::after{
+    content: '';
+}
+
+.next-3{
+    top: 35%;
+    margin:0 10px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    transform: rotate(0.5turn);
+    right: 0px;
+}
+
+.next-3::after{
+    content: '';
+}
+
+
+.prev-3:hover{
+    color: #f7931e;
+} 
+
+.next-3:hover{
+    color: #f7931e;
+}
+.swiper-horizontal> .gallery_contant_slaiders_scroll-3 {
+    background: rgb(0, 0, 0);
+    max-width:  calc(270px + 400 * ((100vw - 320px) / (1440 - 320)));
+    margin: 0 auto;
+    height: 2px;
+    margin-top: 33px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 0;
+    margin-bottom: 100px;
+    bottom: 0px;
+    left: calc(0px + 80 * ((100vw - 320px) / (1440 - 320)));
+    right: calc(0px + 80 * ((100vw - 320px) / (1440 - 320)));
+    cursor: pointer;
+    //left:12.19%;
+}
+.gallery_contant_slaiders_scroll-3, .swiper-scrollbar-horizontal> .swiper-scrollbar-drag{
+    background: #f7931e;
+    z-index: 5;
+    border-radius: 0;
+    top: -4px;
+    height: 10px;
+}
+
+
+
+.container_training {
+    max-width: 984px;
+    margin: 0 auto;
+  
+}
+.content_training {
+    display: flex;
+    justify-content: space-between;
+}
+.content_training:first-child {
+    margin-left: 10px;
+}
+.training_item {
+    width: calc(226px + 82 * ((100vw - 320px) / (1440 - 320)));
+    height: 372px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow:  0px 4px 40px 0px rgba(0, 0, 0, 0.08);
+    margin-right: 10px;
+    padding: 30px 5px;
+}
+.training_item_title {
+    text-align: center;
+    margin: 32px 0 20px 0;
+    font-family: Montserrat;
+    font-weight: 700;
+    color:  #0C1417;
+    font-size:16px;
+    line-height: 24px;
+}
+.training_item_time_image {
+    height: 84px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.item_train_times {
+    width: 149px;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 400;
+    color:  #0C1417;
+    font-size:15px;
+    line-height: 20px;
+    color: rgba(12, 20, 23, 0.5)
+}
+.item_train_img {
+    width: 34px;
+}
+.training_item_price {
+    font-family: Montserrat;
+    font-weight: 700;
+    color:  #0C1417;
+    font-size:24px;
+    line-height: 30px;
+    margin: 15px 0;
+}
+.training_item_count {
+    font-family: Montserrat;
+    font-weight: 400;
+    color:  rgba(12, 20, 23, 0.5);
+    font-size:15px;
+    line-height: 20px;
+}
+
+
+.training_item_button_wrapper{
+    margin: 30px 0 0px 0;
+    position: relative;
+    height: 60px;
+left: -110px;
+}
+.training_item_button_wrapper span{
+    position: absolute;
+    //top: 15px;
+    //left:30px;
+    font-family: Montserrat;
+    font-weight: 700;
+    color:  #F7931E;
+    font-size:16px;
+    line-height: 20px;
+    text-align: center;
+    margin: 15px 80px 15px 80px;
+    z-index: 5;
+}
+
+
+.training_item_button {
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+    display: inline-block;
+    height:50px;
+    width: 220px;
+    background: transparent;
+    border: 1px solid  #F7931E;
+    transform: skew(-30deg, 0deg);
+}
+
+@media (max-width: 800px){
+    .training_item_button_wrapper{
+    left: -75px;
+    }
+    .training_item_button {
+        width: 150px; 
+    }
+    .training_item_button_wrapper span{
+        margin: 15px 50px 15px 50px;
+
+    }
+    .training_item_time_image {
+        flex-direction: row-reverse;
+        //justify-content: ;
+
+    }
+    .item_train_img{
+        //margin-right: 25px;
+        margin-left: 14px;
+
+    }
+  
+}
+
+@media (max-width: 655px){
+    .content_training{
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    }
+
+    .training_item {
+    max-width: 290px;
+    margin-bottom: 30px;
+    padding: 30px 30px;
+    
+    }
+}

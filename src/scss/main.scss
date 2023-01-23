@@ -5,9 +5,15 @@
 @import "./helpers/_mixin.scss";
 @import "./helpers/_normalize.scss";
 @import "./helpers/_variables.scss";
-@import "./new_image_life.scss";
 @import "./header.scss";
-
+@import "./new_image_life.scss";
+@import "./gallery.scss";
+@import "./abonement.scss";
+@import "./treners.scss";
+@import "./forms.scss";
+@import "./contacts_maps.scss";
+@import "./modal.scss";
+@import "./footer.scss";
 
 
 
@@ -20,10 +26,11 @@ body{
 .wrapper{
     max-width: 1440px;
     margin: 0 auto;
-   
+    
 }
 
 
 .main_container{
+    overflow: hidden;
 
 }
