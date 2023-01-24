@@ -1,4 +1,11 @@
 {
+  "name": "Panteon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
   "devDependencies": {
     "del": "^6.0.0",
     "gulp": "^4.0.2",
