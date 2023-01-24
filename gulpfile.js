@@ -51,7 +51,11 @@ function taskCSS() {
         }))
         .pipe(dest('dist/css'));
 };
-
+function taskCSSloaded() {
+    return src('./src/scss/swiper-bundle.min.css')
+        .pipe(sass())
+        .pipe(dest('dist/css'));
+};
 
 //Задачи над JS файлами
 function taskJS() {
@@ -63,7 +67,10 @@ function taskJS() {
         }))
         .pipe(dest('dist/js'));
 };
-
+function taskJSloaded() {
+    return src('src/js/swiper-bundle.min.js')
+        .pipe(dest('dist/js'));
+};
 
 //Задачи над изображениями (минимизирует)
 
@@ -74,7 +81,7 @@ function taskIMG() {
 };
 
 
-//Задачи над шрифтами (преобразует)
+//Задачи над шрифтами (преобразует и загружает оригинал)
 
 function taskFonts() {
     return src('src/fonts/*.{ttf,eot,svg,woff,woff2}')
@@ -82,6 +89,10 @@ function taskFonts() {
         .pipe(dest('dist/fonts'));
 };
 
+function taskFontsTtf() {
+    return src('src/fonts/*.ttf')
+        .pipe(dest('dist/fonts'));
+};
 function watchCssHTML() {
     watch('./src/scss/*.scss', taskCSS);
     watch('./src/pages/**/*.html', taskHTML);
@@ -89,4 +100,4 @@ function watchCssHTML() {
 
 }
 
-exports.default = series(taskDel, parallel(taskCSS, taskJS, taskIMG, taskFonts, taskHTML), watchCssHTML);
+exports.default = series(taskDel, parallel(taskCSS, taskJS, taskIMG, taskFonts, taskHTML, taskFontsTtf, taskCSSloaded, taskJSloaded), watchCssHTML);
