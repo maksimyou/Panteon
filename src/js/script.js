@@ -192,7 +192,7 @@ let myGallary1 = new Swiper('.strip-of-image', {
     breakpoints: {
 
         1118: {
-            slidesPerView: 4,
+            slidesPerView: 3.5,
 
         },
 
